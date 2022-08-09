@@ -17,6 +17,13 @@
 17 mv death_star/darth_vader.txt  death_star/tie_fighter_1
 18  cp death_star/storm_trooper.txt  death_star/tie_fighter_2, cp death_star/storm_trooper.txt  death_star/tie_fighter_3
 19  mv death_star/tie_fighter_1 ./, mv death_star/tie_fighter_2 ./, mv death_star/tie_fighter_3 ./
+20  rm -r tie_fighter_2, rm -r tie_fighter_3
+21 cd x_wing, touch the_force.txt
+22 cd..,rm -r death_star/
+23  mv x_wing/ yavin_4/, mv millenium_falcon/ yavin_4/
+
+
+
 
 
 
