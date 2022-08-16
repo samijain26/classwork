@@ -1,0 +1,48 @@
+
+let radio = {
+    stations: [{
+                    name: "FM 98.3",
+                    song: [
+                            {
+                            title: "Kahi door jab din",
+                            artist: "Mukesh",
+                            }, 
+                            {
+                            title: "O mere sanam", 
+                                artist:"Lata",
+                            }, 
+                            {
+                                title:"Mere sapno ki rani",
+                                artist:"Kishore",
+                            }
+                        ]
+                },
+                {
+                    name: "AM 1170",
+                    song: [
+                                {
+                                    title: "dil ne",
+                                    artist:"Arjeet Singh",
+                                }, 
+                                {
+                                    title:" Pyar hua ikrar hua",
+                                    artist:" Mukesh",
+                                }, 
+                                {
+                                    title:"Dheere Dheere",
+                                    artist:" Asha",
+                                }
+                            ]
+                 },
+            ],
+    changeStation() {
+        let x = Math.floor((Math.random()*100))%2;
+        console.log(x)
+        let y = Math.floor((Math.random()*100))%3;
+        console.log(y)
+        let z = radio.stations[x].song[y];
+        console.log(`Now Playing ${z.title} by ${z.artist}`)
+    }
+}
+radio.changeStation()
+
