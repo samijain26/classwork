@@ -1,0 +1,85 @@
+class Vehicle{
+    // to initiate the class
+    //this takes the current object and
+    constructor(vinp,makep,modelp){
+        this.vin = vinp;
+        this.make=makep;
+        this.model=modelp;
+        this.running = false;
+    }
+   gobroom(){
+    console.log("go vroom")
+   }
+   start(){
+    this.running = true;
+    console.log("start running")
+   }
+   stop(){
+    this.running = false;
+    console.log("stop running")
+
+   }
+   //overwrite tostring() method built in
+   toString(){
+        return console.log("vehicle : " + this.vin + " Model :" + this.model)
+   }
+}
+//intiating the class
+const Tayota = new Vehicle("x1",'boeing',1994)
+const Honda = new Vehicle("x1",'boeing',1994)
+const Lexus = new Vehicle("x1",'boeing',1994)
+
+console.log(Tayota,Honda,Lexus)
+Tayota.start()
+Honda.start()
+Tayota.stop()
+Honda.stop()
+Tayota.toString()
+
+class cat { 
+   constructor(name,breed,color) {
+    this.name = name ;
+    this.breed = breed ;
+    this.color = color ;
+
+
+   }
+   goMeow(){
+    console.log("Too loud")
+   }
+   newName(newName){
+    this.name = newName
+   }
+   toString(){
+    return console.log("Cat name : " +this.name+ "cat breed : " +this.breed + "cat color: " + this.color )
+   }
+
+}
+const Meghi = new cat("Meghi","tiger","white")
+const Sweety = new cat("Sweety","tiger","black")
+const Honey = new cat("Honey","tiger","grey")
+
+//logging the class to see property
+console.log(Meghi,Sweety,Honey)
+
+// calling method
+Meghi.toString()
+Meghi.newName()
+Sweety.newName("princess")
+Honey.goMeow()
+Honey.goMeow()
+
+// Pirates 
+class Pirate {
+    constructor(place,treasure,leg){
+        this.place = place
+        this.treasure = treasure
+        this. leg = leg
+    }
+    changeOcean(newOcean){
+        this.place = newOcean
+    }
+    toString(){
+       return console.log("Pirates name : ")
+    }
+}

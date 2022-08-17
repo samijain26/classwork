@@ -1,0 +1,55 @@
+class Governor{
+    static collegeGraduate = true;
+    static citizen =" US Citizen"
+    
+    static resident(){
+        console.log("I have lived in this state for atleast 6 years")
+    }
+    static  vote(){
+        console.log("Hurray ! I won again")
+
+    } 
+    static age(){
+        console.log("Must be atleast 30 years")
+    }
+}
+ 
+ 
+Governor.resident()
+Governor.vote()
+Governor.age()
+
+ console.log(Governor.collegeGraduate)
+ console.log(Governor.citizen)
+
+ //Inheritence question
+
+ class Person{
+    constructor(name ,age, place){
+        this.name = name ;
+        this.age = age ;
+        this.place = place;
+        this.breeth = true
+        this.drink = true
+        this.eyes = 2
+
+
+    }
+    shelter(){
+        console.log("Yea I have a place to protect myself.")
+    }
+    food(favorite){
+        console.log( " My favorite food is : " + favorite)
+            
+        }
+    Bevarage(favdrink){
+        console.log("My favorite drink is : " + favdrink )
+    }
+
+    }
+ class PostalWorker extends Person{
+    constructor(favcolor,sex){
+        this.favcolor = color
+        this.sex = sex
+      }
+ }
