@@ -46,12 +46,102 @@ D *****
         console.log("Hey you are not cow")
     }
 
+E Driver Ed ******
+
+1.  let perssonAge = 20
+  
+    if (perssonAge >= 16){
+        console.log("Here are the keys!")
+    }else
+       console.log("Sorry !You are too young.")
+    }   
+ loop A **********
+  1. for (let i = 0 ; i <= 10 ; i ++){
+         console.log(i)
+    }
+
+  2. for (let i = 10 ; i <= 400 ; i ++){
+        console.log(i)
+    }
+
+3. for (let i = 12 ; i <= 4000 ; i += 3){
+    console.log(i)
+  }
+
+
+B 1********
+  for (let i = 1; i <= 100; i ++){
+    if (i % 2 == 0){
+        console.log(i) 
+    }
     
+  }
 
+B 2 ********
+for (let i = 1; i <= 100; i ++){
+    if (i % 2 == 0){
+        console.log(i + " <-- is a even number") 
+    }
+    
+  }
 
+c 1
+for (let i = 0; i <= 100; i ++){
+    if (i % 5 == 0){
+         console.log("I found a " + i + ". High five !" ) 
+    }
+    
+  }
+
+c 2
+for (let i = 0; i <= 100; i ++){
+    if (i %3 ==0 && i % 5 == 0){
+        console.log("I found a " + i + ". Three is a crowd !" ) 
+        console.log("I found a " + i + ". High five !" ) 
+    }else{
+
+        if (i % 3 == 0){
+         console.log("I found a " + i + ". Three is a crowd !" ) 
+        }
+        else if (i % 5 == 0){
+         console.log("I found a " + i + ". High five !" ) 
+        }else{
+            continue
+         }
+    
+     }
+    }
+
+    Saving Account *****
+
+    let bank_account = 0
+    for (let i = 1 ; i <= 10; i ++){
+        bank_account += i
+        
+    }
+    console.log(bank_account)
+bonus **************
+    let pay= 0
+    for (let i = 1 ; i <= 100; i ++){
+       pay = pay + i
+        
+    }
+    console.log("Bank Account balance is : " + pay * 2)
+
+Arrays and control flow *******
+
+1. Element
+
+2. yes Array is the ordered list
+
+3. Some real life example:
+   list of student
+   list of songs
+   list of address and so on
+
+ B******
+   const quotes = ["Work hard for success","Never give up","Dream high to reach the sky"]
+
+C ********
 
 */
-
-
-
-    
