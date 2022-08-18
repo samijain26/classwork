@@ -1,0 +1,57 @@
+// Q+A
+/*.  How do we assign value to a variable? Using assignment operator. e.g. let x = 5
+
+2.  how do we change the value of a variable? we assign new value to the variable let num =5
+
+3 how do we assign existing variable a new value? giving /changing existing variable to new value  num = 7
+
+4. What is declare,assign ,define ? declare is used to declear a variable. Assign is used to assign a value to the variable.
+define is used to define the data type
+
+5.What is psedocoding? Pseudocoding is the set of instruction (algorithm) to perform a certain task
+This is helful as we can work on the logic or flow of the program in simple 
+set of instruction before we code that program in a particular language .
+
+6. what  percentage time you shold spent ? easy problem comes quickly but difficult question  take long time 
+to think before we can start coding
+
+B. string
+
+1. let firstVariable
+2. firstVariable = "Hello World"
+3.   firstVariable = 3
+4.  let secondVariable = firstVariable
+5. secondVariable = "Hello"
+6.  firstVariable = 3
+7. const yourName " Sami"
+   let message = " hello , my name is " + yourName)
+
+C  Boolean*****
+7. <
+8. >
+9. ==
+11. ||
+12. &&,&&,&&,&&,||
+13.  &&
+14. ==
+15.a + b === c 
+16 a * a === d
+17. == 
+
+D *****
+1. let animal = "cow"
+    if (animal === "cow"){
+        console.log("mooooo")
+    }else {
+        console.log("Hey you are not cow")
+    }
+
+    
+
+
+
+*/
+
+
+
+    
