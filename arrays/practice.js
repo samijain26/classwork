@@ -86,27 +86,29 @@
 //  //
 //  //rewrite function by using argument and parameter
 
-// //fuction for fizzbuzz
-// // Fizz buzz
-// function fizzBuzz(start,finish) {
-//     for(let i = start ; i <=finish ; i ++){
+//fuction for fizzbuzz
+// Fizz buzz
+
+function fizzBuzz(start,finish) {
+    for(let i = start ; i <=finish ; i ++){
     
 
-//       if (i % 3 === 0 && i % 5 === 0) {
-//             console.log(i + " FizzBuzz");
-//         } else if (i % 3  === 0) {
-//               console.log(i +" Fizz");
-//         } else if (i % 5 === 0) {
-//               console.log(i +" Buzz");
-//         }else {
-//               console.log(i);
+         if (i % 3 === 0 && i % 5 === 0) {
+            console.log(i + " FizzBuzz");
+         }else if (i % 3  === 0) {
+              console.log(i +" Fizz");
+         } else if (i % 5 === 0) {
+              console.log(i +" Buzz");
+         }else {
+              console.log(i);
         
-//     }
-//     }
-//     //console.log(i)
-// }
+        }
+    }
     
-// console.log(fizzBuzz(1,50));
+}
+    
+fizzBuzz(1,50);
+console.log("END OF FIZZ BUZZ")
 
 //cookies quarter change function
 
@@ -127,7 +129,7 @@ let fifty_count=0
 let twenty_count=0
 let ten_count=0
 let five_count=0
-let two_count=0
+
 let one_count=0
 let quater_count=0
 let dime_count=0
@@ -146,61 +148,58 @@ function lDenomination(cost1, paid1){
              fifty_count = fifty_count + 1
              console.log("Fifty : "+fifty_count)
             }
-        if (recAmount1 >= 2000){
+        else if (recAmount1 >= 2000){
             recAmount1 = recAmount1 - 2000
              twenty_count = twenty_count +1
             console.log("Twenty : " +twenty_count)
             }
-        if (recAmount1 >= 1000){
+        else if (recAmount1 >= 1000){
             recAmount1 = recAmount1 - 1000
             ten_count = ten_count + 1
             console.log("Ten : " +ten_count)
         }
-        if (recAmount1 >= 500) {
+        else if (recAmount1 >= 500) {
             recAmount1 = recAmount1 - 500
-            five_count=fifty_count + 1
+            five_count=five_count + 1
             console.log("Five : " + five_count)
         }
-        if (recAmount1 >= 200) {
-            recAmount1 = recAmount1 - 200
-            two_count=two_count + 1
-            console.log("two : " + two_count)
-        }
-        if (recAmount1 >=100) {
+       
+        else if (recAmount1 >=100) {
             recAmount1 = recAmount1 - 100
             one_count=one_count + 1
             console.log("One : " + one_count)
         }
        
 
-        if (recAmount1 > .25) {
-            recAmount1 = recAmount1 - .25
-            quater=quater_count + 1
+        else if (recAmount1 >= 25) {
+            recAmount1 = recAmount1 - 25
+            quater_count=quater_count + 1
             console.log("Quater: " + quater_count)
         }
         
-        if (recAmount1 > .10) {
-            recAmount1 = recAmount1 - .10
+        else if (recAmount1 >= 10) {
+            recAmount1 = recAmount1 - 10
             dime_count=dime_count + 1
-            console.log("Dime : " + one_count)
+            console.log("Dime : " + dime_count)
         }
        
-        if (recAmount1 > .05 ){
-            recAmount1 = recAmount1 - .05
+        else if (recAmount1 >= 5 ){
+            recAmount1 = recAmount1 - 5
             nickle_count=nickle_count + 1
             console.log("Nickle : " + nickle_count)
         }
         
 
-        if (recAmount1 >=.01 ){
-            recAmount1 = recAmount1 - .01
+        else if (recAmount1 >= 1 ){
+            recAmount1 = recAmount1 - 1
             penny_count=penny_count + 1
             console.log("penny : " + penny_count)
         }
-        return recAmount1
+       
     }
-   
+    return recAmount1
 }
-    lDenomination(10.24,70)
-
+    lDenomination(12.50,70)
+    //console.log("Fifty : "+fifty_count)
+    //console.log("One : " + one_count)
 

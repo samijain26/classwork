@@ -47,9 +47,126 @@ Governor.age()
     }
 
     }
+    //postal worker class
  class PostalWorker extends Person{
-    constructor(favcolor,sex){
-        this.favcolor = color
-        this.sex = sex
-      }
+    maildelievary(){
+        console.log("Do not deliever post at wrong place")
+    }
+    shifts(){
+        console.log("I work for a night shift")
+    }
  }
+
+ //two instances of postal worker
+
+ const mailman1 = new PostalWorker("Harry",32,"South River")
+ const mailman2 = new PostalWorker("Joey",42,"East Brunswick")
+  // consoling Mailman
+
+  console.log(mailman1,mailman2)
+
+ mailman1.food("samosa")  // calling parent method
+ mailman1.Bevarage("Mango shake")  //calling parent method
+  mailman1.maildelievary()
+  mailman1.shifts()
+
+  mailman2.food("Kachori")
+ mailman2.Bevarage("Coke")
+  mailman2.maildelievary()
+  mailman2.shifts()
+ // Chef class
+ //class Chef extends Person
+ class Chef extends Person{
+    //super()
+    reciepe(){
+        console.log("I am famous cook. I have great receipe")
+    }
+    workplace(){
+        console.log("I work for a five star hotel")
+    }
+ }
+
+//creating two instances of chef class
+const chef1 = new Chef("Sanjeev Kapoor", 45,"Delhi")
+const Chef2 = new Chef(" Brar", 23,"Canada")
+console.log(chef1,Chef2)
+chef1.reciepe()
+chef1.workplace()
+chef1.shelter()   //calling parent method
+
+
+// Bank account problem*************
+
+class BankAccount{
+    constructor(ownerName,balance){
+        this.ownerName = ownerName
+        this.balance = balance
+        this.acctNum = Math.floor(Math.random()*10000)
+       
+    }
+    deposit(depositemoney){
+        this.balance = this.balance + depositemoney
+    
+    console.log(this.ownerName + " your " + this.acctNum + "has balance of : " + this.balance)
+    }
+    WithDraw(withdrwmoney){
+        this.balance = this.balance - withdrwmoney
+        console.log(this.ownerName + " your  account number " + this.acctNum + "has balance of : " + this.balance + " after withdrawel")
+
+    }
+}
+
+//child class of BankAccount
+class checkingAccount extends BankAccount{
+    constructor(ownerName,balance){
+        super(ownerName,balance)
+        this.overdraftEnabled = true
+    }
+    WithDraw(amount) { 
+        if (amount > this.balance) {
+    
+          if (this.overdraftEnabled) {
+    
+            let overdraftFee = 20
+            this.balance -= (amount + overdraftFee)
+            console.log(this.ownerName +'this transaction overdrafts your balance :(')
+    
+          } else {
+            console.log(this.ownerNameownerName  + 'you cannot withdraw more than you have')
+            
+          }
+    
+        } else {
+          this.balance -= amount
+          console.log(this.ownerNameownerName  + 'current balance after withdrawing ' + amount + " is: " + this.balance)
+        }
+      }
+    }
+    
+       
+
+    
+
+//const checkingAccount1 = new checkingAccount("sami",4500)
+
+
+class SavingAccount extends BankAccount{
+   // constructor(ownerName,balance){
+      //  super(ownerName,balance)
+    //}
+
+    WithDraw(){
+      
+         console.log(this.ownerNameownerName   +"withdrawel of over draft money disallowed.")
+        }
+    
+
+}
+const bankacc1 = new BankAccount("Bhami",5000)
+const checkingAccount1 = new checkingAccount("Atul",4500)
+const SavingAccount1 = new SavingAccount("Sami",5600)
+
+
+bankacc1.WithDraw(500)
+checkingAccount1.WithDraw(6000)
+SavingAccount1.WithDraw()

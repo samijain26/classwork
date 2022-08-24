@@ -1,0 +1,19 @@
+
+function findShort(s){
+  
+  let strSplit = s.split(' ');
+  console.log(strSplit)
+  
+  let short_word ="got "
+  for (let i = 0 ; i<strSplit.length;i++){
+    //console.log(strSplit[i].length)
+     if (strSplit[i].length < short_word.length){
+      short_word = strSplit[i]
+      
+     }
+  }
+    return short_word.length
+   }
+  
+
+ console.log(findShort("hi Imm just got it"))

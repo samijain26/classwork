@@ -1,5 +1,5 @@
 // Q+A
-/*.  How do we assign value to a variable? Using assignment  ( =) operator. e.g. let x = 5
+/*  How do we assign value to a variable? Using assignment  ( =) operator. e.g. let x = 5
 
 2.  how do we change the value of a variable? we assign new value to the variable let num =5
 
@@ -358,24 +358,97 @@ Adding keys and value ***********
 
   4.  console.log(user.purchased[2])
     
-    
-     */ 
- 
-    const user = {
-      name :"Sam",
-      age : 30,
-      email : "samijain26@yahoo.com",
-      purchased :[],
-     }
-    console.log(user)
-    
-    user.email="hi@yahoo.com"
-        console.log(user)
-        user.age++
+  E object with in object **********************************
+  
+  1.   user.friend = {
+        name : "Mona",
+        age  : 30,
+        location : "India",
+        purchased array : []
 
-        user.location = "New jersey"
-        user.purchased.push("carbohydrates")
-        user.purchased.push("Peace of mind")
-        console.log(user.purchased[2])
-        console.log(user)
-   
+        }
+
+  2.  console.log(user.friend.name)
+
+  3.  console.log(user.friend.location)
+
+
+  4.   user.friend.age = 55
+
+  5. user.friend.purchased.push("The One Ring")
+
+  6. user.friend.purchased.push("A latte")
+
+  7. user.friend.purchased[1]
+
+
+  Loops *****************************
+
+   1. user.purchased.forEach((item) =>console.log(item))
+
+   2.  user.friend.purchased.forEach((item) =>console.log(item))
+
+
+   Functios can operate on objects
+
+   1.2.3.  function updateUser(){
+            user.age++
+            user.name = user.name.toUpperCase() 
+
+              }
+
+            updateUser()
+
+ 2.    function oldandloud(person){
+        return person.age++
+         }  
+         oldandloud(user)
+
+
+
+Hungry for more*****************************************
+    
+Mama cat
+
+    const cat1 = {
+      name : "Mama Cat",
+      breed  : "Persian",
+      age : 10
+    }
+      console.log(cat1.age)
+      console.log(cat1.breed)
+
+PAPA CAT
+
+      const cat2 = {
+        name : "Papa cat"
+        breed  : "Savannah",
+      age : 12
+      }
+     
+  COMBINE CAT
+      
+
+      function combineCats(mama,papa){
+           const newCat ={
+               name : cat1.name + cat2.name,
+               breed : cat1.breed +"_"+ cat2.breed,
+               age : 1
+           }
+          
+           return newCat
+         }
+         
+     console.log(combineCats(cat1,cat2))
+
+
+  CAT BRAIN BENDER
+
+   console.log(combineCats(combineCats(cat1,cat2),combineCats(cat1,cat2)))
+
+    console.log(combineCats(combineCats(combineCats(cat1,cat2),combineCats(cat1,cat2)),combineCats(combineCats(cat1,cat2),combineCats(cat1,cat2))))
+
+
+  */
+ 
+     //*******Yea finished the first review.So proud of myself */

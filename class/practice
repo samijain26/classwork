@@ -1,40 +1,43 @@
-class Vehicle{
-    // to initiate the class
-    //this takes the current object and
-    constructor(vinp,makep,modelp){
-        this.vin = vinp;
-        this.make=makep;
-        this.model=modelp;
-        this.running = false;
-    }
-   gobroom(){
-    console.log("go vroom")
-   }
-   start(){
-    this.running = true;
-    console.log("start running")
-   }
-   stop(){
-    this.running = false;
-    console.log("stop running")
+// class Vehicle{
+//     // to initiate the class
+//     //this takes the current object and
+//     constructor(vinp,makep,modelp){
+//         this.vin = vinp;
+//         this.make=makep;
+//         this.model=modelp;
+//         this.running = false;
+//     }
+//    gobroom(){
+//     console.log("go vroom")
+//    }
+//    start(){
+//     this.running = true;
+//     console.log("start running")
+//    }
+//    stop(){
+//     this.running = false;
+//     console.log("stop running")
 
-   }
-   //overwrite tostring() method built in
-   toString(){
-        return console.log("vehicle : " + this.vin + " Model :" + this.model)
-   }
-}
-//intiating the class
-const Tayota = new Vehicle("x1",'boeing',1994)
-const Honda = new Vehicle("x1",'boeing',1994)
-const Lexus = new Vehicle("x1",'boeing',1994)
+//    }
+//    //overwrite tostring() method built in
+//    toString(){
+//         return console.log("vehicle : " + this.vin + " Model :" + this.model)
+//    }
+// }
+// //intiating the class
+// const Tayota = new Vehicle("x1",'boeing',1994)
+// const Honda = new Vehicle("x1",'boeing',1994)
+// const Lexus = new Vehicle("x1",'boeing',1994)
 
-console.log(Tayota,Honda,Lexus)
-Tayota.start()
-Honda.start()
-Tayota.stop()
-Honda.stop()
-Tayota.toString()
+// console.log(Tayota,Honda,Lexus)
+// Tayota.start()
+// Honda.start()
+// Tayota.stop()
+// Honda.stop()
+// Tayota.toString()
+
+
+//Class exercise 1***********
 
 class cat { 
    constructor(name,breed,color) {
@@ -69,17 +72,70 @@ Sweety.newName("princess")
 Honey.goMeow()
 Honey.goMeow()
 
-// Pirates 
+// Pirates exercise 2*************
 class Pirate {
-    constructor(place,treasure,leg){
+    constructor(name,place,rank){
+        this.name = name
         this.place = place
-        this.treasure = treasure
-        this. leg = leg
+        
+        this. rank = rank
     }
-    changeOcean(newOcean){
-        this.place = newOcean
+    changeOcean(){
+       console.log(" Currently Sailing in the " + this.place)
     }
     toString(){
-       return console.log("Pirates name : ")
+       return console.log("Pirates name : " + this.name + "  pirate rank : " + this.rank)
     }
+    drink(rum){
+        console.log("I love to drink "+ rum)
+    }
+
 }
+
+// Intaintiating two arrays
+const jollyRoger = [new Pirate("Jack Smith", "India","Captain"),new Pirate("Harry Potter","UK","Vice Captain"), new Pirate("Teddy","Japan","Worker")]
+const blackpearl = [new Pirate("Ashish","India","Captain"),new Pirate("Atul","UK","Vice captain"),new Pirate("Satish","Japan","woker")]
+
+console.log(jollyRoger)
+for (let i = 0 ; i < jollyRoger.length ; i ++){
+     
+    jollyRoger[i].toString()
+    jollyRoger[i].drink("Wine")
+    
+    jollyRoger[i].changeOcean()
+}
+
+//console.log(jollyRoger)
+for (let i = 0 ; i < blackpearl.length ; i ++){
+     
+    blackpearl[i].toString()
+    blackpearl[i].drink("Wine")
+    
+    blackpearl[i].changeOcean()
+}
+
+// Exercise 3**************
+class Vehicle{
+    constructor(number){
+        this.name = number }
+
+    }
+ 
+    const frieighter = []
+for (let i = 0 ;i < 100 ;i ++){
+      frieighter[i] = new Vehicle(i)
+    // frieighter[i].push
+   // console.log(frieighter)
+}
+console.log(frieighter)
+
+const higherOrderFunc = param => {
+    param();
+    return `I just invoked ${param.name} as a callback function!`
+  }
+   
+  const anotherFunc = () => {
+    return 'I\'m being invoked by the higher-order function!';
+  }
+   
+ console.log(higherOrderFunc(anotherFunc))

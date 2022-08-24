@@ -1,0 +1,82 @@
+// map
+//filter
+//forEach
+
+const nums = [1,2,3,4,5,6,7,8,9,10,0]
+const panagram = ['The','quicker',"are",'brown','foxy','jumps','i']
+  //take call back function as argument
+  //call back function run at later time
+//nums.forEach(... nums)
+
+// every method
+
+let test =nums.every(mycallback)   //return true or false
+//either return value by console log or store in a variable
+
+//creating call back function
+function mycallback(element){
+    if (element >= 0){
+        return true
+    }else {
+        return false
+    }
+    //return element >=0
+
+}
+//arrow function is with lee systex
+ let test2 =panagram.every((element) =>element.length <8)
+ console.log("the result is" + test2)
+
+//filter method
+ let filterarr = nums.filter((element) => element < 4)
+
+    console.log("The result of filter array is :" + filterarr)
+
+let filtereven = panagram.filter((item) =>item.length % 2 == 0)
+
+    
+
+console.log("The result of filter even length array is :" + filtereven)
+
+//find method
+
+let findarr = nums.find((item) => item % 5 === 0 )
+console.log("forund :" + findarr)
+
+let findlength = panagram.find((item) => item.length >5 )
+console.log("forund :" + findlength)
+
+
+//find index method
+ let findindexnum = nums.findIndex((item) => item % 3 === 0)
+ console.log("found first index at : " + findindexnum )
+
+ let findindexword = panagram.findIndex((item) => item.length < 2)
+ console.log("found first word index at : " + findindexword )
+
+ //for each method return no value so we do not need to store in  variable
+//et foreach =
+
+//multiply by 3
+ nums.forEach((item) =>console.log( item * 3 ))
+ 
+
+ let foreachword = panagram.forEach((item) => console.log("new word is :" + item+ "!"))
+
+ // map method 
+
+ let multen = nums.map((item) => item * 100)
+ console.log(multen)
+
+ let newuppercase = panagram.map((item) => item.toUpperCase())
+ console.log(newuppercase)
+
+ //some method chaecks one mathching condition
+
+ let newsome = nums.some((item ) => item % 3 === 0)
+ console.log("number divide by 3 are:" + newsome)
+
+ let newlettera = panagram.some((item ) => item.includes("a"))
+ console.log("found a :" + newlettera)
+
+

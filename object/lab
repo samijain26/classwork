@@ -8,12 +8,12 @@ let radio = {
                             artist: "Mukesh",
                             }, 
                             {
-                            title: "O mere sanam", 
-                                artist:"Lata",
+                            title:  "O mere sanam", 
+                            artist: "Lata",
                             }, 
                             {
-                                title:"Mere sapno ki rani",
-                                artist:"Kishore",
+                            title: "Mere sapno ki rani",
+                            artist: "Kishore",
                             }
                         ]
                 },
@@ -22,15 +22,15 @@ let radio = {
                     song: [
                                 {
                                     title: "dil ne",
-                                    artist:"Arjeet Singh",
+                                    artist: "Arjeet Singh",
                                 }, 
                                 {
-                                    title:" Pyar hua ikrar hua",
-                                    artist:" Mukesh",
+                                    title: " Pyar hua ikrar hua",
+                                    artist: " Mukesh",
                                 }, 
                                 {
-                                    title:"Dheere Dheere",
-                                    artist:" Asha",
+                                    title: "Dheere Dheere",
+                                    artist: " Asha",
                                 }
                             ]
                  },
@@ -47,4 +47,7 @@ let radio = {
     }
 }
 radio.changeStation()
+
+//console.log(Math.floor(Math.random()*10)%3)
+
 

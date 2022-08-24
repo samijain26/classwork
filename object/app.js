@@ -44,13 +44,15 @@ const charecterCount = str =>{
     
     for (let i =0 ;i < str.length ; i ++){
         let char=str[i]
-        console.log(char)
-        //console.log(output[char])
+        
+        
         if (output[char]){
             output[char]++
         }
+        
       else{
-        output[char]=1
+       output[char]=1
+       //output.char=1
       }
 
     }
