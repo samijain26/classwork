@@ -1,0 +1,36 @@
+body {background-color: aquamarine;}
+
+p{
+    background-color: blueviolet;
+}
+.main-title {background-color: green;}
+
+#title {
+    background-color: blue;
+}
+.cool {background-color: beige ;}
+
+.ptag{background-color: brown;}
+
+
+/*  special keyword document
+we can use method
+getElementById
+querySelector
+
+
+access text and innerhtml
+textContent
+innerHtml
+
+style properties can be changed
+
+it has bunch pf properties color,backgroud,text align
+
+
+consolelog(ptag.classList)
+ptag.classList.add()
+ptag.classList.remove()
+ptag.classList.toggle()
+
+<p class
