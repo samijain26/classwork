@@ -1,0 +1,45 @@
+
+
+/* Intro to Flexbox */
+
+* {
+    /* height & width now includes border & padding */
+    box-sizing: border-box;
+  }
+  /* margin for the entire body and font */
+  body {
+    margin: 0;
+    font-family: Helvetica;
+  }
+/* this would make all <section> elements flex containers and 
+all direct children become flex items. */
+  /* section {
+    display: flex;
+  } */
+  /* Let's make the <nav> a Flexbox: */
+  nav {
+    display: flex;
+    flex-direction: row; /* default */
+    justify-content: flex-start; /* default */
+    /* border: 2px solid red; */
+    /* outline: 2px solid red; */
+    height: 50px;
+    background-color: #a2cbb6;
+    font-size: 20px;
+    /* top, right, and bottom, left */
+    margin: 10px;
+    /* margin: 100px; */
+    color: #f3dba8;
+  }
+
+  /* use if lost withing browser layout */
+ div {
+  padding: 13px;
+  /* outline: 2px solid brown; */
+
+ }
+
+ nav > div:last-child {
+  margin-left: auto;
+}
+

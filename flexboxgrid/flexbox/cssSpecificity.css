@@ -1,0 +1,51 @@
+/*
+​
+CSS Specificity
+​
+*/
+
+
+/* 
+    inline styles (written in the HTML) are more specific 
+    than tags, classes, or ids
+*/
+
+h1 {
+    color:brown !important;
+}
+
+h1 {
+    color: white !important;
+}
+
+/*  ids   classes   tags  */
+/* (1, 0, 0) */
+#para-id {
+    color: black;
+}
+
+/* (0, 1, 0) */
+.para {
+    color: purple;
+    border: 10px solid purple;
+}
+
+/*  ids   classes   tags  */
+/*  (0,      0,       2)   */
+body h1 {
+    color: green;
+    border: 10px solid green;
+    height: 150px;
+}
+
+/*  (0, 0, 1)   */
+h1 {
+    color: blue;
+}
+
+/*  (0, 0, 1)   */
+h1 {
+    color: red;
+    border: 10px solid red;
+    height: 100px;
+}
