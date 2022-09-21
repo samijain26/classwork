@@ -10,7 +10,7 @@ body {
     grid-gap: 4px;
     grid-template-rows: 100px 100px 1fr 1fr;
     grid-template-columns: 80px 1fr 30px;
-    font-size: 0;
+    font-size: 12;
     
     
 }
@@ -46,7 +46,7 @@ body {
 
 
 .five {
-    grid-row: 1;
+   
    grid-row: 3/5
 }
 
@@ -55,5 +55,7 @@ body {
 }
 
 .seven {
+    grid-row :4 / 5;
+    grid-column:3/4;
    background-color: yellow
 }

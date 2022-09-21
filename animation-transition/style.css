@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+#container {
+    border: 1px solid grey;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    
+}
+.item {
+    width: 100px;
+    height: 50px;
+    border: 1px solid white;
+    
+}
+.item:nth-child(even) {
+    background-color: green;
+    transition: transform 500ms ease-in-out;
+  
+}
+.item:nth-child(odd) {
+    background-color:red;
+    transition: transform 500ms ease-in-out;
+}
+
+.item1:hover  { 
+    transform: translateY(450px);
+ 
+}
+.item1:hover ~.item2  {
+    transform:translateY(400px);
+    
+   
+    
+}
+.item1:hover ~.item3  {
+    transform:translateY(350px);
+    
+    
+}  
+.item1:hover ~.item4  { 
+    transform: translateY(300px);
+
+}
+.item1:hover ~.item5  { 
+    transform: translateY(250px);
+
+}
+.item1:hover ~.item6  { 
+    transform: translateY(200px);
+
+}
+.item1:hover ~.item7  { 
+    transform: translateY(150px);
+
+}
+.item1:hover ~.item8  { 
+    transform: translateY(100px);
+
+}
+.item1:hover ~.item9  { 
+    transform: translateY(50px);
+    z-index: 2;
+}

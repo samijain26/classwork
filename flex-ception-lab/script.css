@@ -3,14 +3,14 @@
 
 
 
-*{
+body{
   background-color:black;
   }
 
 .flex-container{
   display: flex;
   justify-content:space-evenly;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   height: 100vh;
 }
@@ -19,16 +19,17 @@
   flex-direction: column;
   justify-content: space-around;
  align-items: center;
- width: 170px;
+ width: 200px;
  border: 10px;
- height: 170px;
+ height: 200px;
  background-color:blue;
+ 
   }
 .reditem{
   width: 40px;
   height: 40px;
   border: 10px;
-  background-color: yellow;
+  background-color: red;
 }
 .dotclasitem{
   display: flex;

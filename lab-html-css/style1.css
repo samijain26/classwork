@@ -1,0 +1,14 @@
+.button{
+  display:flex;
+   flex-direction: column;
+    width:200px;
+    height: 30px;
+    margin:5px;
+    background-color: aqua;
+    cursor: pointer;
+    color: blue;
+    border: 5px solid blueviolet;
+    border-radius: 20px;
+    box-shadow: brown;
+    font-size: 20px;
+}

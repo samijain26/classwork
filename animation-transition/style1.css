@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+#container {
+    border: 1px solid grey;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+    width: 100px;
+    height: 50px;
+    border: 1px solid white;
+}
+.item:nth-child(even) {
+    background-color: rgb(56, 55, 53);
+}
+h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+    color: black;
+    transition-property: color;
+    transition-duration: 5s;
+    transition-delay: 4s;
+}
+
+
+/*  ANIMATION RELATED BELOW */
+
+
+
+/*  TRANSITION PROPERTY  */
+
+/* base class */
+.item-1 {
+    background-color: blue;
+    width: 100px;
+    /* LONG FORM */
+
+    /*  specifiy a property to watch for changes */
+    transition-property: background-color, width, transform;
+
+    /* how long your transition will take */
+    transition-duration: 2s, 1s;
+
+    /* how your transition will progress through time */
+    /* transition-timing-function: ease-in; */
+
+    /* how long to wait before starting your transition */
+    /* transition-delay: 5s; */
+
+
+    /* SHORTHAND */
+
+    /*  <property> <duration> <timing-function> <delay>  */ 
+    /* transition: background-color, width 500ms, 500ms ease-in; */
+
+}
+
+/* modifying class */
+.item-1:hover {   /* hover psuedo class */
+    background-color: red;
+    width: 250px;
+    z-index: 1;
+}
+
+
+.item-2 {
+    /* SHORTHAND */
+    transition: transform 500ms ease-in;
+
+    /* LONG FORM */
+    /* transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in; */
+}
+
+.item-2:hover {
+
+    /* TRANSFORM PROPERTY */
+
+    /* transform property using the CSS Function translate */
+    /* moving our element to the right by 50px when we hover over it */
+    transform: translate(50px);
+    z-index: 2;
+    
+}
+
+.item-3 {
+    transition: transform 500ms ease-in;
+}
+
+.item-3:hover {
+    transform: translate(50px);
+    z-index: 3;
+    
+}
+
+
+/*  ANIMATION PROPERTY  */
+
+.item-4:hover {
+    animation-name: growingTaller;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 100ms;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes growingTaller {
+  0% {
+    height: 50px;
+  }
+  50% {
+    height: 100px;
+    background-color: blue;
+  }
+  100% {
+    height: 200px;
+    background-color: purple;
+  }
+  }
+  
