@@ -4,9 +4,10 @@ const express = require("express")
 
 //bring in packaged route
 
+
 const fruitRoutes = require('./routes/fruitsRoutes')
 
-const vegitablesRoutes = require('./routes/vegitablesRoutes')
+const vegetablesRoutes = require('./routes/vegetablesRoutes')
 
 const meatRoutes = require('./routes/meatRoutes')
 
@@ -14,14 +15,29 @@ const app = express()
 
 const port = 5000
 
+//set up view engine
+//app.engine   1st .jsx and then getting react view
+
+app.set('view engine', 'jsx')
+app.engine('jsx', require('express-react-views').createEngine())
+
+
 //set up array
 
 //middleware
-app.use('/api/fruits',fruitRoutes)
+app.use(express.urlencoded({extended:false}))
 
-app.use('/api/vegitables',vegitablesRoutes)
 
-app.use('/api/meat',meatRoutes)
+
+// app.use((req,res,next)=>{
+//     console.log("going to fruit route")
+//     next()
+// })
+//app.use('/api/fruits',fruitRoutes)
+app.use('/fruits',fruitRoutes)
+app.use('/vegetables',vegetablesRoutes)
+//this is just route page with our naming convention
+app.use('/meats',meatRoutes)
 // app.get('/' , (req,res) => {
 //  res.send("<h1>Hello world!</h1>")
 // })
